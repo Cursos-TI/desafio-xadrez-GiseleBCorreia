@@ -10,6 +10,7 @@ int bispo;
 int torre;
 int rainha;
 int cavalo;
+int movi;
 
 //Entrada de dados
 printf("Digite o número da peça que deseja movimentar:\n");
@@ -39,11 +40,17 @@ else if (numero == 3){
     printf("Esquerda\n");
     }}
 
-cavalo = 1;
- do {  
-    printf("Baixo e Esquerda\n");
-    cavalo++;
-    } while (cavalo<=5);
-
+else if (numero ==4){
+    for (cavalo=1; cavalo<=2; cavalo++)
+    
+        printf("Baixo\n");
+    movi = 1;
+    while (movi <= 1)
+    {
+        printf("Esquerda\n");
+    movi++;
+    }
+    
+}
     return 0;
 }
